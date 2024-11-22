@@ -308,10 +308,10 @@ body.dark .switch::before{
 }
 
 .welcome {
-    position: fixed; /* Changed from relative to fixed */
+    position: fixed; 
     top: 0;
-    left: 290px; /* Aligns with sidebar width when open */
-    right: 0; /* Extends to the right edge of the screen */
+    left: 290px;
+    right: 0;
     height: 100vh;
     background: var(--boddy-color);
     padding: 20px; 
@@ -321,11 +321,11 @@ body.dark .switch::before{
     justify-content: flex-start;
     align-items: center;
     gap: 70px;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden;
 }
 
 .sidebar.close ~ .welcome {
-    left: 88px; /* Adjusts position when sidebar is closed */
+    left: 88px;
 }
 
 .welcome-text {
