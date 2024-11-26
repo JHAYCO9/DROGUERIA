@@ -1,86 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add</title>
-    <link rel="stylesheet" href="../css/nabvar.css">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-    <nav class="sidebar close">
-        <header>
-        <div class="image-text">
-            <span class="image">
-            <img src="../images/Logo.png" alt="logo">
-            </span>
-    
-            <div class="text header-text">
-            <span class="name">Drogueria mickey</span>
-            <span class="profession">Gestion </span>
-            </div>
-        </div>
-    
-        <i class='bx bx-chevron-left toggle' ></i>    </header>
-    
-        <div class="menu-bar">
-        <div class="menu">
-            <li class="search-box">
-            </li>
-            <ul class="menu-links">
-            <li class="nav-link">
-                <a href="index.html">
-                <i class='bx bx-search-alt icon' ></i>
-                <span class="text nav-text">Buscar</span> 
-                </a>
-            </li>
-            </ul>
-            <ul class="menu-links">
-            <li class="nav-link">
-                <a href="#">
-                <i class='bx bx-plus icon'></i>
-                <span class="text nav-text">Agregar Medicamento</span> <!--agregar-->
-                </a>
-            </li>
-            </ul>
-            <ul class="menu-links">
-            <li class="nav-link">
-                <a href="#">
-                <i class='bx bx-edit-alt icon' ></i>
-                    <span class="text nav-text">Editar Medicamento</span> <!--editar-->
-                </a>
-            </li>
-            </ul>
-        </div>
-            <div class="bottom-content">
-            <li class="mode">
-                <div class="moon-sun">
-                <i class='bx bx-moon icon' ></i>
-                <i class='bx bx-sun icon' ></i>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add</title>
+        <link rel="stylesheet" href="../css/nabvar.css">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <nav class="sidebar close">
+            <header>
+            <div class="image-text">
+                <span class="image">
+                <img src="../images/Logo.png" alt="logo">
+                </span>
+        
+                <div class="text header-text">
+                <span class="name">Drogueria mickey</span>
+                <span class="profession">Gestion </span>
                 </div>
-                <span class="mode-text text">MODO OSCURO</span>
-                <div class="toggle-switch">
-                <span class="switch"></span>
-                </div>
-            </li>
             </div>
-        </div>
-    </nav>
+        
+            <i class='bx bx-chevron-left toggle' ></i>    </header>
+        
+            <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                </li>
+                <ul class="menu-links">
+                <li class="nav-link">
+                    <a href="index.html">
+                    <i class='bx bx-search-alt icon' ></i>
+                    <span class="text nav-text">Buscar</span> 
+                    </a>
+                </li>
+                </ul>
+                <ul class="menu-links">
+                <li class="nav-link">
+                    <a href="#">
+                    <i class='bx bx-plus icon'></i>
+                    <span class="text nav-text">Agregar Medicamento</span> <!--agregar-->
+                    </a>
+                </li>
+                </ul>
+                <ul class="menu-links">
+                <li class="nav-link">
+                    <a href="edit.html">
+                    <i class='bx bx-edit-alt icon' ></i>
+                        <span class="text nav-text">Editar Medicamento</span> <!--editar-->
+                    </a>
+                </li>
+                </ul>
+            </div>
+                <div class="bottom-content">
+                <li class="mode">
+                    <div class="moon-sun">
+                    <i class='bx bx-moon icon' ></i>
+                    <i class='bx bx-sun icon' ></i>
+                    </div>
+                    <span class="mode-text text">MODO OSCURO</span>
+                    <div class="toggle-switch">
+                    <span class="switch"></span>
+                    </div>
+                </li>
+                </div>
+            </div>
+        </nav>
 
-    <section class="welcome">
-        <h1 class="welcome-text">AÑADIR MEDICAMENTO</h1>
-        <h2 class="descrip-text">Añade un medicamento para almacenarlo.</h2>
-        <form class="form-add" onsubmit="return saveToLocalStorage(event);">
-            <input type="file" class="file" placeholder="Agrega foto del medicamento">
-            <input type="text" class="name-medicamento" placeholder="Nombre (Marca)" required>
-            <input type="number" class="estante" placeholder="Estante" required>
-            <input type="number" class="fila" placeholder="Fila del estante" required>
-            <input type="text" class="price" onkeyup="moneda(this);" placeholder="Ingresa el precio" required>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+        <section class="welcome">
+            <h1 class="welcome-text">AÑADIR MEDICAMENTO</h1>
+            <h2 class="descrip-text">Añade un medicamento para almacenarlo.</h2>
+            <form class="form-add" onsubmit="return saveToLocalStorage(event);">
+                <input type="file" class="file" placeholder="Agrega foto del medicamento">
+                <input type="text" class="name-medicamento" placeholder="Nombre (Marca)" required>
+                <input type="number" class="estante" placeholder="Estante" required>
+                <input type="number" class="fila" placeholder="Fila del estante" required>
+                <input type="text" class="price" onkeyup="moneda(this);" placeholder="Ingresa el precio" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
-<script src="../js/scriptnavbar.js"></script>
-<script src="../js/localstorage.js"></script>
-</body>
-</html>
+    <script src="../js/scriptnavbar.js"></script>
+    <script src="../js/localstorageindex.js"></script>
+    </body>
+    </html>

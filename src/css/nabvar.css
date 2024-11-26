@@ -40,6 +40,17 @@ body{
     overflow: overlay;
 }
 
+.table_edit {
+    width: 100%;
+    background-color: #fffb;
+
+    margin: .8rem auto;
+    border-radius: .6rem;
+
+    overflow: auto;
+    overflow: overlay;
+}
+
 .table__body::-webkit-scrollbar{
     width: 0.5rem;
     height: 0.5rem;
@@ -53,6 +64,31 @@ body{
 
 .table__body:hover::-webkit-scrollbar-thumb{ 
     visibility: visible;
+}
+
+.table_edit table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table_edit th {
+    background-color: #f4f4f4;
+    text-align: left;
+    padding: 8px;
+    border-bottom: 2px solid #ddd;
+}
+
+.table_edit td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table_edit {
+    overflow: visible;
+}
+
+.table_edit table {
+    table-layout: auto;
 }
 
 table {
