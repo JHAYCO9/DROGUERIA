@@ -7,10 +7,15 @@ Opciones que permite la aplicacion:
 </p>
 
 - Añadir Medicamentos: Permite registrar medicamentos ingresando su nombre.
+
 <a href="https://ibb.co/g6NWnSF"><img src="https://i.ibb.co/DLhMq9g/image.png" alt="image" border="0"></a>
+
 - Eliminar Medicamentos: Facilita la eliminación de medicamentos del inventario.
+  
 <a href="https://ibb.co/cQJb62K"><img src="https://i.ibb.co/PgxTc1s/image.png" alt="image" border="0"></a>
+
 - Buscar Medicamentos: Proporciona una funcionalidad de búsqueda rápida para localizar medicamentos específicos.
+
 <a href="https://ibb.co/VVsC7xp"><img src="https://i.ibb.co/p2SKtQr/image.png" alt="image" border="0"></a>
 
 
