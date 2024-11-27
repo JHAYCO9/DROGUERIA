@@ -206,10 +206,16 @@ body.dark{
     position: relative;
 }
 
-.sidebar .image-text img{
-    width: 100px;
+.sidebar .image-text img {
+    width: 100px; 
     border-radius: 10px;
+}
 
+.sidebar .image {
+    min-width: 70px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sidebar header .image-text{
